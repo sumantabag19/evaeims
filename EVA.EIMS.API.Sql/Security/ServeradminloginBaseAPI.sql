@@ -1,0 +1,3 @@
+﻿CREATE DATABASE SCOPED CREDENTIAL [ServeradminloginBaseAPI]
+    WITH IDENTITY = N'evaadmin';
+

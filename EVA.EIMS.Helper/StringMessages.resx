@@ -1,0 +1,771 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AlreadyExist" xml:space="preserve">
+    <value>data already exist</value>
+  </data>
+  <data name="And" xml:space="preserve">
+    <value>and</value>
+  </data>
+  <data name="AssociatedRole" xml:space="preserve">
+    <value>Role is associated with other users. Can not delete Role.</value>
+  </data>
+  <data name="Characters" xml:space="preserve">
+    <value>Characters</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="ClientNotSet" xml:space="preserve">
+    <value>client_Id is not set</value>
+  </data>
+  <data name="DataDeleteFailure" xml:space="preserve">
+    <value>failed to delete the data</value>
+  </data>
+  <data name="DataDeleteSuccess" xml:space="preserve">
+    <value>data deleted successfully</value>
+  </data>
+  <data name="DataSavedFailure" xml:space="preserve">
+    <value>failed to save the  data</value>
+  </data>
+  <data name="DataSavedSuccess" xml:space="preserve">
+    <value>data saved successfully</value>
+  </data>
+  <data name="DataUpdateFailure" xml:space="preserve">
+    <value>failed to update the data</value>
+  </data>
+  <data name="DataUpdateSuccess" xml:space="preserve">
+    <value>data updated successfully</value>
+  </data>
+  <data name="EmailMandatory" xml:space="preserve">
+    <value>Email id should not be empty</value>
+  </data>
+  <data name="IncorrectUserNamePwd" xml:space="preserve">
+    <value>The user name or password is incorrect</value>
+  </data>
+  <data name="InvalidClient" xml:space="preserve">
+    <value>Invalid Client</value>
+  </data>
+  <data name="InvalidGrant" xml:space="preserve">
+    <value>Invalid Grant</value>
+  </data>
+  <data name="MismatchClientId" xml:space="preserve">
+    <value>Mismatch Client Id</value>
+  </data>
+  <data name="MismatchOrganization" xml:space="preserve">
+    <value>Mismatch Organizations, can't add/update or delete other organization data.</value>
+  </data>
+  <data name="MismatchRole" xml:space="preserve">
+    <value>Can not update the role</value>
+  </data>
+  <data name="MismatchUserId" xml:space="preserve">
+    <value>Mismatch User Ids</value>
+  </data>
+  <data name="MismatchUserName" xml:space="preserve">
+    <value>Can not update UserName</value>
+  </data>
+  <data name="NotExists" xml:space="preserve">
+    <value>Data does not exist</value>
+  </data>
+  <data name="Organization" xml:space="preserve">
+    <value>Organization</value>
+  </data>
+  <data name="ProvideClientId" xml:space="preserve">
+    <value>Please provide Client Id</value>
+  </data>
+  <data name="ProvideNewPwd" xml:space="preserve">
+    <value>Please provide a new password.</value>
+  </data>
+  <data name="ProvideOldPwd" xml:space="preserve">
+    <value>Please provide the old password.</value>
+  </data>
+  <data name="ProvideOrganizationName" xml:space="preserve">
+    <value>Please provide proper Organization Name</value>
+  </data>
+  <data name="ProvideOrgDetails" xml:space="preserve">
+    <value>Please provide org details</value>
+  </data>
+  <data name="ProvidePlainTextPassword" xml:space="preserve">
+    <value>Please provide PlainTextPassword</value>
+  </data>
+  <data name="ProvideRoleDetails" xml:space="preserve">
+    <value>Please provide role details</value>
+  </data>
+  <data name="ProvideRoleId" xml:space="preserve">
+    <value>Please provide roleId</value>
+  </data>
+  <data name="ProvideUserDetails" xml:space="preserve">
+    <value>Please provide user details</value>
+  </data>
+  <data name="ProvideUserId" xml:space="preserve">
+    <value>Please provide user id</value>
+  </data>
+  <data name="ProvideUserName" xml:space="preserve">
+    <value>Please provide user name</value>
+  </data>
+  <data name="ProvideUserNamePwd" xml:space="preserve">
+    <value>Please provide username or password</value>
+  </data>
+  <data name="PwdEmpty" xml:space="preserve">
+    <value>Password should not be empty</value>
+  </data>
+  <data name="PwdLoweCase" xml:space="preserve">
+    <value>Password should contain at least one lower case letter</value>
+  </data>
+  <data name="PwdMax" xml:space="preserve">
+    <value>Password should not be greater than</value>
+  </data>
+  <data name="PwdMin" xml:space="preserve">
+    <value>Password should not be less than</value>
+  </data>
+  <data name="PwdNumericCase" xml:space="preserve">
+    <value>Password should contain at least one numeric value</value>
+  </data>
+  <data name="PwdResetFailure" xml:space="preserve">
+    <value>Failed to reset the password</value>
+  </data>
+  <data name="PwdResetSuccess" xml:space="preserve">
+    <value>Password has been reset successfully</value>
+  </data>
+  <data name="PwdUpperCase" xml:space="preserve">
+    <value>Password should contain at least one upper case letter</value>
+  </data>
+  <data name="PwdWrong" xml:space="preserve">
+    <value>The password provided by you is incorrect. Please check again.</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="SendEmailPwdFailure" xml:space="preserve">
+    <value>Failure in sending password to your email</value>
+  </data>
+  <data name="SendEmailPwdSuccess" xml:space="preserve">
+    <value>password has been sent to your email successfully</value>
+  </data>
+  <data name="SuccessFully" xml:space="preserve">
+    <value>Successfully</value>
+  </data>
+  <data name="TokenSuccess" xml:space="preserve">
+    <value>Token generated successfully</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="Validated" xml:space="preserve">
+    <value>Validated </value>
+  </data>
+  <data name="ProvideOrgId" xml:space="preserve">
+    <value>Please provide orgId</value>
+  </data>
+  <data name="AssociatedOrg" xml:space="preserve">
+    <value>Organization is associated with other users/devices. Can not delete organization.</value>
+  </data>
+  <data name="ProvideValidToken" xml:space="preserve">
+    <value>Please provide valid access token</value>
+  </data>
+  <data name="EmailNotExits" xml:space="preserve">
+    <value>Email id does not exists</value>
+  </data>
+  <data name="EmailTemplateNotExists" xml:space="preserve">
+    <value>Email Template does not exists</value>
+  </data>
+  <data name="LanguageNotExists" xml:space="preserve">
+    <value>Language does not exists</value>
+  </data>
+  <data name="MismatchClientType" xml:space="preserve">
+    <value>Mismatch client type, you can not update other client's user data.</value>
+  </data>
+  <data name="IncorrectDeviceIdKey" xml:space="preserve">
+    <value>Device Id or Key is incorrect.</value>
+  </data>
+  <data name="Application" xml:space="preserve">
+    <value>Application</value>
+  </data>
+  <data name="MismatchAppId" xml:space="preserve">
+    <value>Mismatch Application Id</value>
+  </data>
+  <data name="ProvideApplicationName" xml:space="preserve">
+    <value>Please provide proper application name.</value>
+  </data>
+  <data name="DeviceStatusSetToUsed" xml:space="preserve">
+    <value>Device status set to used</value>
+  </data>
+  <data name="DeviceStatusSuccessfulUpdate" xml:space="preserve">
+    <value>Device status updated successfully</value>
+  </data>
+  <data name="ErrorUpdateSerialKey" xml:space="preserve">
+    <value>Error in updating serial key</value>
+  </data>
+  <data name="InvalidSerialKey" xml:space="preserve">
+    <value>Invalid serial key</value>
+  </data>
+  <data name="MismatchDeviceId" xml:space="preserve">
+    <value>Mismatch Device Id</value>
+  </data>
+  <data name="NoPermissionOrMismatchOrganization" xml:space="preserve">
+    <value>You don't have permission, mismatch organizations</value>
+  </data>
+  <data name="NoPermissionToUpdateClientType" xml:space="preserve">
+    <value>You don't have permissions to update client type</value>
+  </data>
+  <data name="ProvideDeviceDetails" xml:space="preserve">
+    <value>Please provide device details</value>
+  </data>
+  <data name="ProvideDeviceId" xml:space="preserve">
+    <value>Please provide device Id</value>
+  </data>
+  <data name="SerialKeyInUse" xml:space="preserve">
+    <value>Serial key alredy in use</value>
+  </data>
+  <data name="UnauthorizedUser" xml:space="preserve">
+    <value>Unauthorized User</value>
+  </data>
+  <data name="UnauthorisedUser" xml:space="preserve">
+    <value>You are not authorised to make these changes</value>
+  </data>
+  <data name="MismatchQuestion" xml:space="preserve">
+    <value>The question details are mismatched.</value>
+  </data>
+  <data name="ClientType" xml:space="preserve">
+    <value>ClientType</value>
+  </data>
+  <data name="MismatchClientTypeId" xml:space="preserve">
+    <value>Mismatch client type id.</value>
+  </data>
+  <data name="ProvideClientTypeId" xml:space="preserve">
+    <value>Please provide ClientType Id.</value>
+  </data>
+  <data name="MstOrganizationCannotDelete" xml:space="preserve">
+    <value>Cannot delete master organization.</value>
+  </data>
+  <data name="ProvideQuestionDetails" xml:space="preserve">
+    <value>Please provide security question details.</value>
+  </data>
+  <data name="ProvideSecurityQuestion" xml:space="preserve">
+    <value>Please provide a security question.</value>
+  </data>
+  <data name="UnauthorizedClient" xml:space="preserve">
+    <value>Unsupported Client</value>
+  </data>
+  <data name="unsupported_grant_type" xml:space="preserve">
+    <value>Unsupported Grant Type</value>
+  </data>
+  <data name="InvalidAppId" xml:space="preserve">
+    <value>Please provide AppId</value>
+  </data>
+  <data name="ProvideAccessToken" xml:space="preserve">
+    <value>Please provide valid access token.</value>
+  </data>
+  <data name="InvalidToken" xml:space="preserve">
+    <value>The token provided is invalid.</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>The token provided is valid.</value>
+  </data>
+  <data name="ProvideOrgAppMappingId" xml:space="preserve">
+    <value>Provide Organization Application mapping Id</value>
+  </data>
+  <data name="ProvideProperAppId" xml:space="preserve">
+    <value>Provide Proper AppId</value>
+  </data>
+  <data name="ProvideProperOrgId" xml:space="preserve">
+    <value>Provide Proper OrganizationId</value>
+  </data>
+  <data name="ProvideAppId" xml:space="preserve">
+    <value>Please provide the application you would like to add the user to.</value>
+  </data>
+  <data name="UserApplicationMapping" xml:space="preserve">
+    <value>User Application Mapping</value>
+  </data>
+  <data name="ProvideMappingDetails" xml:space="preserve">
+    <value>Please provide Application User Mapping details.</value>
+  </data>
+  <data name="UserApplicationInaccessible" xml:space="preserve">
+    <value>User cannot be mapped with given application.</value>
+  </data>
+  <data name="MismatchMappingId" xml:space="preserve">
+    <value>The mapping Ids don't match.</value>
+  </data>
+  <data name="AccountLocked" xml:space="preserve">
+    <value>Your Account has been locked. Please contact admin.</value>
+  </data>
+  <data name="OTP_Expired" xml:space="preserve">
+    <value>OTP has expired</value>
+  </data>
+  <data name="OTP_Invalid" xml:space="preserve">
+    <value>Provide OTP is invalid</value>
+  </data>
+  <data name="OTP_Valid" xml:space="preserve">
+    <value>OTP validated successfully</value>
+  </data>
+  <data name="GetRandomQuestnFailed" xml:space="preserve">
+    <value>Security Questions could not be retrieved.</value>
+  </data>
+  <data name="DataLoadFailure" xml:space="preserve">
+    <value>The data could not be loaded.</value>
+  </data>
+  <data name="ProvideAnsDetails" xml:space="preserve">
+    <value>Please provide proper answer details.</value>
+  </data>
+  <data name="ProvideValidUserId" xml:space="preserve">
+    <value>Please provide valid User Id.</value>
+  </data>
+  <data name="SecurityQuesAnsVerified" xml:space="preserve">
+    <value>Security Question and respective answers are verified.</value>
+  </data>
+  <data name="WrongQuestionAnswer" xml:space="preserve">
+    <value>The chosen question and answer do not match.</value>
+  </data>
+  <data name="Device" xml:space="preserve">
+    <value> Device</value>
+  </data>
+  <data name="EmailTemplate" xml:space="preserve">
+    <value>Email Template</value>
+  </data>
+  <data name="InvalidData" xml:space="preserve">
+    <value>Please provide valid information.</value>
+  </data>
+  <data name="ProvideRequiredQuesAns" xml:space="preserve">
+    <value>Please provide the required questions and answers to verify your account.</value>
+  </data>
+  <data name="QuestionsNotConfigued" xml:space="preserve">
+    <value>The user has does not have any security questions configured.</value>
+  </data>
+  <data name="RequestedDetails" xml:space="preserve">
+    <value>The requested details </value>
+  </data>
+  <data name="UsersSecurityDataNotPresent" xml:space="preserve">
+    <value>Required number of security questions and answers are not configured for this user.</value>
+  </data>
+  <data name="ApplicationRoles" xml:space="preserve">
+    <value>Application roles</value>
+  </data>
+  <data name="ApplicationUser" xml:space="preserve">
+    <value>Users mapped with application</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="ProvideQuesId" xml:space="preserve">
+    <value>Please provide a Question ID.</value>
+  </data>
+  <data name="InvalidInput" xml:space="preserve">
+    <value>Invalid input</value>
+  </data>
+  <data name="AccountVerificationRequired" xml:space="preserve">
+    <value>Please complete account verification</value>
+  </data>
+  <data name="UnauthorizedAccessException" xml:space="preserve">
+    <value>You are not an authorized user. Please contact admin for further support.</value>
+  </data>
+  <data name="LockedAccount" xml:space="preserve">
+    <value>all locked users of</value>
+  </data>
+  <data name="OldPasswordMismatch" xml:space="preserve">
+    <value>Old password does not match. Please try again.</value>
+  </data>
+  <data name="PasswordUpdated" xml:space="preserve">
+    <value>Password has been updated successfully.</value>
+  </data>
+  <data name="PasswordUpdateFailure" xml:space="preserve">
+    <value>There was an issue while updating the password.</value>
+  </data>
+  <data name="ProvideAllDetails" xml:space="preserve">
+    <value>Please provide all the details.</value>
+  </data>
+  <data name="TokenUserMismatch" xml:space="preserve">
+    <value>Mismatch UserId.</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>User with the given username does not exist.</value>
+  </data>
+  <data name="DifferentAppid" xml:space="preserve">
+    <value>User belongs to different appliction</value>
+  </data>
+  <data name="NoRecordsFound" xml:space="preserve">
+    <value>There are no records provided</value>
+  </data>
+  <data name="OutSideOfOrganization" xml:space="preserve">
+    <value>You are trying to access outside of your organization </value>
+  </data>
+  <data name="PasswordAlreadyPresent" xml:space="preserve">
+    <value>New password is already present in last recent passwords</value>
+  </data>
+  <data name="PasswordSame" xml:space="preserve">
+    <value>New password same as old password</value>
+  </data>
+  <data name="OTPNotExists" xml:space="preserve">
+    <value>OTP does not exist</value>
+  </data>
+  <data name="NoActiveDevice" xml:space="preserve">
+    <value>No active device found for this organization.</value>
+  </data>
+  <data name="NoActiveUser" xml:space="preserve">
+    <value>No active user found for this organization.</value>
+  </data>
+  <data name="InactiveRecord" xml:space="preserve">
+    <value>The record you are trying to update is inactive. Please activate it before updating any details.</value>
+  </data>
+  <data name="ProvideEmailId" xml:space="preserve">
+    <value>Please provide an Email Id.</value>
+  </data>
+  <data name="RequesterAccountLocked" xml:space="preserve">
+    <value>Admin user account is locked. </value>
+  </data>
+  <data name="RequesterNotFound" xml:space="preserve">
+    <value>Admin with this userName cannot be found. </value>
+  </data>
+  <data name="IsActiveRequired" xml:space="preserve">
+    <value>IsActive is Required</value>
+  </data>
+  <data name="OrganizationNotExists" xml:space="preserve">
+    <value>Organization does not exist</value>
+  </data>
+  <data name="ForgotPasswordTimeOut" xml:space="preserve">
+    <value>Forgot password session timeout</value>
+  </data>
+  <data name="OTPVerificationRequired" xml:space="preserve">
+    <value>Please complete OTP verification.</value>
+  </data>
+  <data name="SecurityQuestionsRequired" xml:space="preserve">
+    <value>Please Complete Security Questions and respective answers</value>
+  </data>
+  <data name="NoPermission" xml:space="preserve">
+    <value>You don't have permission to assign</value>
+  </data>
+  <data name="ProvideClientType" xml:space="preserve">
+    <value>Please provide valid ClientType.</value>
+  </data>
+  <data name="ProvideTwoFactorEnableStatus" xml:space="preserve">
+    <value>Please Two Factor Authentication details for user.</value>
+  </data>
+  <data name="ProvideRequiredSecQues" xml:space="preserve">
+    <value>User has not provided required number of security questions.</value>
+  </data>
+  <data name="ClientTypeModuleAccess" xml:space="preserve">
+    <value>Client Type Module Access</value>
+  </data>
+  <data name="ProvideClientTypeDetails" xml:space="preserve">
+    <value>Please Provide ClientType Details</value>
+  </data>
+  <data name="ProvideModuleDetails" xml:space="preserve">
+    <value>Please Provide Module Details</value>
+  </data>
+  <data name="RoleModuleAccess" xml:space="preserve">
+    <value>Role Module Access</value>
+  </data>
+  <data name="NoPermissionToApp" xml:space="preserve">
+    <value>You don't have permission to access to this application</value>
+  </data>
+  <data name="NoAppNameFound" xml:space="preserve">
+    <value>No application name is found in token</value>
+  </data>
+  <data name="DeletRefreshTokenRequired" xml:space="preserve">
+    <value>DeleteRefreshToken is required</value>
+  </data>
+  <data name="ProvideValidProxyAddress" xml:space="preserve">
+    <value>Please provide valid IP Proxy Address.</value>
+  </data>
+  <data name="IPData" xml:space="preserve">
+    <value>IP Data</value>
+  </data>
+  <data name="IsIPAllowRequired" xml:space="preserve">
+    <value>Value of Is IP Allowed is required.</value>
+  </data>
+  <data name="ProvideProperIPAddressId" xml:space="preserve">
+    <value>Please provide valid IPAddressId.</value>
+  </data>
+  <data name="ProvideValidIPRange" xml:space="preserve">
+    <value>Please provide valid IP range.</value>
+  </data>
+  <data name="UserPasswordExpired" xml:space="preserve">
+    <value>The password for this user has expired. Please update your password.</value>
+  </data>
+  <data name="ProvideValidUserNameAndEmail" xml:space="preserve">
+    <value>Please provide valid Username and Email ID.</value>
+  </data>
+  <data name="ValidToken" xml:space="preserve">
+    <value>The token is valid.</value>
+  </data>
+  <data name="NoMappinfOfAppWithOrg" xml:space="preserve">
+    <value>No mapping of the provided application with the organization exists.</value>
+  </data>
+  <data name="ProvideValidDetails" xml:space="preserve">
+    <value>Please Provide Valid Details </value>
+  </data>
+  <data name="EmailNotSent" xml:space="preserve">
+    <value>The email could not be sent.</value>
+  </data>
+  <data name="EmailSentSuccess" xml:space="preserve">
+    <value>The email has been sent successfully.</value>
+  </data>
+  <data name="PasswordExpireEmail" xml:space="preserve">
+    <value>Your EVA password is about to expire</value>
+  </data>
+  <data name="PasswordRecovery" xml:space="preserve">
+    <value>Password Recovery</value>
+  </data>
+  <data name="MultipleOrgAccessRequired" xml:space="preserve">
+    <value>Please provide Multiple Organization Access Field .</value>
+  </data>
+  <data name="ProvideDetails" xml:space="preserve">
+    <value>Please provide valid details.</value>
+  </data>
+  <data name="ProperClientValidateFor" xml:space="preserve">
+    <value>Please enter proper client validation period</value>
+  </data>
+  <data name="ProvideFlow" xml:space="preserve">
+    <value>Please provide flow</value>
+  </data>
+  <data name="ProvideScopes" xml:space="preserve">
+    <value>Please provide scope</value>
+  </data>
+  <data name="ClientExpired" xml:space="preserve">
+    <value>Client has expired</value>
+  </data>
+  <data name="ProvideClientValidationPeriod" xml:space="preserve">
+    <value>Please provide client validation period</value>
+  </data>
+  <data name="ClientNotFound" xml:space="preserve">
+    <value>Client not found</value>
+  </data>
+  <data name="InvalidScope" xml:space="preserve">
+    <value>The scope provided is invalid.</value>
+  </data>
+  <data name="TokenExpired" xml:space="preserve">
+    <value>This token has expired.</value>
+  </data>
+  <data name="ProvideAuthProviderName" xml:space="preserve">
+    <value>Please Provide Authentication Provider Name.</value>
+  </data>
+  <data name="ProvideValideProvider" xml:space="preserve">
+    <value>Please provide valide authentication provider name.</value>
+  </data>
+  <data name="DeletedUser" xml:space="preserve">
+    <value>User is already deleted.</value>
+  </data>
+  <data name="NotIMSAccount" xml:space="preserve">
+    <value>Account is not Configured for IMS Auth Provider</value>
+  </data>
+  <data name="NotValidForSuperAdminRole" xml:space="preserve">
+    <value>Only IMS Users can be Super Admin </value>
+  </data>
+  <data name="ApplicationDetailsNotFound" xml:space="preserve">
+    <value>Application details not found.</value>
+  </data>
+  <data name="ExistsAndInActive" xml:space="preserve">
+    <value>This record cannot be saved as it already exists but is Inactive.</value>
+  </data>
+  <data name="RoleDetailsNotFound" xml:space="preserve">
+    <value>Role details not found.</value>
+  </data>
+  <data name="UserDetailsNotFound" xml:space="preserve">
+    <value>User details not found.</value>
+  </data>
+  <data name="NoUserApplicationMappingFound" xml:space="preserve">
+    <value>User application mapping not found</value>
+  </data>
+  <data name="CanNotDeleteRole" xml:space="preserve">
+    <value>You can not delete default roles.</value>
+  </data>
+  <data name="CanNotAssign" xml:space="preserve">
+    <value>Only master organization users are allowed for multiple organization access</value>
+  </data>
+  <data name="DeviceNotExist" xml:space="preserve">
+    <value>Device does not exist</value>
+  </data>
+  <data name="ProvideValidUserNamePwd" xml:space="preserve">
+    <value>Please provide valid username or password</value>
+  </data>
+  <data name="ClientNoAccessToAnyOrg" xml:space="preserve">
+    <value>Client has no access to any organization</value>
+  </data>
+  <data name="AppRoleNotPresent" xml:space="preserve">
+    <value>There is no such user role is present in the application</value>
+  </data>
+  <data name="MasterOrganizationUser" xml:space="preserve">
+    <value>SuperAdmin role only allowed for master organization </value>
+  </data>
+  <data name="PasswordRequired" xml:space="preserve">
+    <value>Password is required</value>
+  </data>
+  <data name="InvalidAppRoleId" xml:space="preserve">
+    <value>Invalid Application Role Id</value>
+  </data>
+  <data name="TokenAlreadyExists" xml:space="preserve">
+    <value>This token has already been logged out.</value>
+  </data>
+  <data name="OtpValidationNotDone" xml:space="preserve">
+    <value>OTP Verification is not done</value>
+  </data>
+  <data name="ClientNotExpire" xml:space="preserve">
+    <value>Client does not expire</value>
+  </data>
+  <data name="ClientNotExpired" xml:space="preserve">
+    <value>Client is not an expired client</value>
+  </data>
+  <data name="NotValidRenewablePeriod" xml:space="preserve">
+    <value>Client is not in an expiration Period.</value>
+  </data>
+  <data name="AuthCodeExpired" xml:space="preserve">
+    <value>The Current Session Expired</value>
+  </data>
+  <data name="InvalidAuthFlow" xml:space="preserve">
+    <value>Only the authorization code flow is supported by this authorization server.</value>
+  </data>
+  <data name="InvalidAuthRelation" xml:space="preserve">
+    <value>The specified 'username and clientid' relation is not present.</value>
+  </data>
+  <data name="InvalidRedirectURL" xml:space="preserve">
+    <value>The specified 'redirect_uri' is not valid.</value>
+  </data>
+  <data name="InvalidRequestURL" xml:space="preserve">
+    <value>The specified 'request_uri' is not valid.</value>
+  </data>
+  <data name="InvalidResponseMode" xml:space="preserve">
+    <value>The specified 'response_mode' is unsupported.</value>
+  </data>
+  <data name="InvalidURIScheme" xml:space="preserve">
+    <value>Please provide HTTPS URL scheme for your application.</value>
+  </data>
+  <data name="TokenRequestCountEmail" xml:space="preserve">
+    <value>Token generation count alert</value>
+  </data>
+  <data name="UnauthorizedTokenExchange" xml:space="preserve">
+    <value>You are not authorized for token exchange</value>
+  </data>
+  <data name="UserLimitExceeded" xml:space="preserve">
+    <value>Maximum {0} users can be sent in this request.</value>
+  </data>
+  <data name="MobileNoNotFound" xml:space="preserve">
+    <value>Mobile no not found or mobile login is disabled.</value>
+  </data>
+  <data name="OTPSentSuccess" xml:space="preserve">
+    <value>The OTP has been sent successfully.</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="EmailVerificationSuccess" xml:space="preserve">
+    <value>Email verified successfully</value>
+  </data>
+  <data name="InvalidLink" xml:space="preserve">
+    <value>Incorrect activation link</value>
+  </data>
+</root>

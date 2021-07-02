@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>EVA.EIMS.API.Sql</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{06d2093c-0d01-41f7-9524-39a9aa565fec}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Essence.EIMS.API.Sql</RootNamespace>
+    <AssemblyName>Essence.EIMS.API.Sql</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="dbo\User Defined Types\" />
+    <Folder Include="Security\" />
+    <Folder Include="External Resources\" />
+    <Folder Include="dbo\External Tables\" />
+    <Folder Include="DML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\ApplicationUserMapping.sql" />
+    <Build Include="dbo\Tables\AuditDbChange.sql" />
+    <Build Include="dbo\Tables\AuditUserLogin.sql" />
+    <Build Include="dbo\Tables\AuthProviderMaster.sql" />
+    <Build Include="dbo\Tables\ClientType.sql" />
+    <Build Include="dbo\Tables\ClientTypeAccessException.sql" />
+    <Build Include="dbo\Tables\ClientTypeModuleAccess.sql" />
+    <Build Include="dbo\Tables\Device.sql" />
+    <Build Include="dbo\Tables\EmailTemplate.sql" />
+    <Build Include="dbo\Tables\ForgotPasswordFlowManagement.sql" />
+    <Build Include="dbo\Tables\IMSLogOutToken.sql" />
+    <Build Include="dbo\Tables\IPTable.sql" />
+    <Build Include="dbo\Tables\Language.sql" />
+    <Build Include="dbo\Tables\LockAccount.sql" />
+    <Build Include="dbo\Tables\LockType.sql" />
+    <Build Include="dbo\Tables\Module.sql" />
+    <Build Include="dbo\Tables\OauthClient.sql" />
+    <Build Include="dbo\Tables\Organization.sql" />
+    <Build Include="dbo\Tables\OrganizationApplicationMapping.sql" />
+    <Build Include="dbo\Tables\OrganizationTenantMapping.sql" />
+    <Build Include="dbo\Tables\PasswordHistory.sql" />
+    <Build Include="dbo\Tables\RefreshToken.sql" />
+    <Build Include="dbo\Tables\Role.sql" />
+    <Build Include="dbo\Tables\RoleAccessException.sql" />
+    <Build Include="dbo\Tables\OTPType.sql" />
+    <Build Include="dbo\Tables\RoleModuleAccess.sql" />
+    <Build Include="dbo\Tables\SecurityQuestion.sql" />
+    <Build Include="dbo\Tables\User.sql" />
+    <Build Include="dbo\Tables\UserAnswer.sql" />
+    <Build Include="dbo\Tables\UserClientTypeMapping.sql" />
+    <Build Include="dbo\Tables\UserOrganizationMapping.sql" />
+    <Build Include="dbo\Tables\UserOTP.sql" />
+    <Build Include="dbo\Tables\UserRoleMapping.sql" />
+    <Build Include="dbo\Tables\z_AuditsApr.sql" />
+    <Build Include="dbo\Tables\z_AuditsAug.sql" />
+    <Build Include="dbo\Tables\z_AuditsDec.sql" />
+    <Build Include="dbo\Tables\z_AuditsFeb.sql" />
+    <Build Include="dbo\Tables\z_AuditsJan.sql" />
+    <Build Include="dbo\Tables\z_AuditsJul.sql" />
+    <Build Include="dbo\Tables\z_AuditsJun.sql" />
+    <Build Include="dbo\Tables\z_AuditsMar.sql" />
+    <Build Include="dbo\Tables\z_AuditsMay.sql" />
+    <Build Include="dbo\Tables\z_AuditsNov.sql" />
+    <Build Include="dbo\Tables\z_AuditsOct.sql" />
+    <Build Include="dbo\Tables\z_AuditsSept.sql" />
+    <Build Include="dbo\Tables\AccessType.sql" />
+    <Build Include="dbo\Tables\Actions.sql" />
+    <Build Include="dbo\Tables\Application.sql" />
+    <Build Include="dbo\Tables\ApplicationRoleMapping.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllActiveOrganizationByClientId.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllActiveInactive.sql" />
+    <Build Include="dbo\Stored Procedures\proc_VerifyRoleBaseAccess.sql" />
+    <Build Include="dbo\Stored Procedures\proc_VerifyRoleAccessExceptions.sql" />
+    <Build Include="dbo\Stored Procedures\proc_VerifyClientTypeBaseAccess.sql" />
+    <Build Include="dbo\Stored Procedures\proc_VerifyClientTypeAccessExceptions.sql" />
+    <Build Include="dbo\Stored Procedures\proc_ValidateUserApplicationAccess.sql" />
+    <Build Include="dbo\Stored Procedures\proc_ResetLockOfUser.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetUserSecurityQuestionInfo.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetUserMappingWithApplicationId.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetUserByName.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetUserById.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetRoleModuleDetails.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetRandomSecurityQuestion.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetDeviceBasedOnRole.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetClientTypeModuleDetails.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetApplicationRoles.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllUserWithAppDetails.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllUsersForPwdExpNotify.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllUsersByRoleForUI.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllUsersByRole.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllUserDetailsByName.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllUserByUserId.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllUserByOrgId.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllOrgWithAppDetails.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllOrgNameAppNameMapping.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllOrgAppDetailsByUserName.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllOrganizationByClientId.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllOrganization.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllOldPassword.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllLockedUsers.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllExistUserById.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllExistUser.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllExceptionRolesByApplicationName.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllDeviceDetails.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllClient.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllAuthorizedIPByAppId.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllApplicationRoleMapping.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllApplicationByUserId.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllApplicationByRole.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAllAppIdByOrganizationId.sql" />
+    <Build Include="dbo\Stored Procedures\proc_DeleteRefreshTokenById.sql" />
+    <Build Include="dbo\Stored Procedures\proc_DeleteLoggedOutToken.sql" />
+    <Build Include="dbo\Stored Procedures\proc_ClearRefreshTokenData.sql" />
+    <Build Include="dbo\User Defined Types\UDTClientTypeArray.sql" />
+    <Build Include="dbo\User Defined Types\UDTDevice.sql" />
+    <Build Include="dbo\User Defined Types\UDTOrganization.sql" />
+    <Build Include="dbo\User Defined Types\UDTUser.sql" />
+    <Build Include="dbo\User Defined Types\UDTUserDatails.sql" />
+    <Build Include="dbo\User Defined Types\UDTUserForUI.sql" />
+    <None Include="Security\Serveradminlogin.sql" />
+    <None Include="Security\ServeradminloginBaseAPI.sql" />
+    <None Include="Security\ServeradminloginBaseAPIValUat.sql" />
+    <None Include="Security\ServeradminloginValUat.sql" />
+    <None Include="dbo\External Tables\SecQuesAnswer.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </None>
+    <None Include="dbo\External Tables\tblClient.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </None>
+    <None Include="dbo\External Tables\tblClientType.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </None>
+    <None Include="dbo\External Tables\tblDevice.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </None>
+    <None Include="dbo\External Tables\tblEmail.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </None>
+    <None Include="dbo\External Tables\tblLanguage.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </None>
+    <None Include="dbo\External Tables\tblOrg.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </None>
+    <None Include="dbo\External Tables\tblRole.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </None>
+    <None Include="dbo\External Tables\tblUser.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </None>
+    <None Include="dbo\External Tables\tblUserRole.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </None>
+    <Build Include="dbo\Tables\Log.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetOrganizationByTenant.sql" />
+    <Build Include="dbo\Stored Procedures\GetSiteAdminDetails.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetOrgAppDetails.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetAzureAppIdByClientId.sql" />
+    <Build Include="dbo\Stored Procedures\proc_GetClientwiseTokenCount.sql" />
+    <None Include="DML\Login with Mobile changes.sql" />
+    <None Include="DML\User registration email changes.sql" />
+    <None Include="DML\Added AppUserId in User table.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DML\Email verification changes.sql" />
+    <None Include="DML\Organization module permission for service client.sql" />
+  </ItemGroup>
+</Project>

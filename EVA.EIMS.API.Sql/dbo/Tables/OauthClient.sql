@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[OauthClient] (
+    [OauthClientId]          INT              IDENTITY (1, 1) NOT NULL,
+    [ClientId]               NVARCHAR (100)   NOT NULL,
+    [ClientGuid]             UNIQUEIDENTIFIER NOT NULL,
+    [ClientName]             NVARCHAR (250)   NOT NULL,
+    [ClientSecret]           NVARCHAR (250)   NOT NULL,
+    [Flow]                   NVARCHAR (60)    NOT NULL,
+    [AllowedScopes]          NVARCHAR (160)   NOT NULL,
+    [Description]            NVARCHAR (250)   NULL,
+    [ClientTypeId]           INT              NOT NULL,
+    [AppId]                  INT              NOT NULL,
+    [IsActive]               BIT              NOT NULL,
+    [DeleteRefreshToken]     BIT              CONSTRAINT [DF_OauthClient_DeleteRefreshToken] DEFAULT ((0)) NOT NULL,
+    [ClientValidationPeriod] FLOAT (53)       NULL,
+    [ClientExpireOn]         DATETIME         NULL,
+    [CreatedBy]              UNIQUEIDENTIFIER NOT NULL,
+    [CreatedOn]              DATETIME         NOT NULL,
+    [ModifiedBy]             UNIQUEIDENTIFIER NULL,
+    [ModifiedOn]             DATETIME         NULL,
+    [TokenValidationPeriod]  INT              CONSTRAINT [DF_OauthClient_TokenValidationPeriod] DEFAULT ((300)) NOT NULL,
+    [RequestURL]             NVARCHAR (500)   NULL,
+    [DebugURL]               NVARCHAR (500)   NULL,
+    [RedirectURL]            NVARCHAR (500)   NULL,
+    [RequestThreshold] INT NULL, 
+    CONSTRAINT [PK_OauthClient] PRIMARY KEY CLUSTERED ([OauthClientId] ASC),
+    CONSTRAINT [FK_OauthClient_ClientType] FOREIGN KEY ([ClientTypeId]) REFERENCES [dbo].[ClientType] ([ClientTypeId])
+);
+

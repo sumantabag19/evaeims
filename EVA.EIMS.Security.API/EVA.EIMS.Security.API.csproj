@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <StartupObject>EVA.EIMS.Security.API.Program</StartupObject>
+    <DefaultItemExcludes>$(DefaultItemExcludes);Publish/**/*</DefaultItemExcludes>
+    <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="RefreshTokenController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="2.2.1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.21" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="2.2.5" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.AzureAppServices" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="3.0.1" />
+    <PackageReference Include="NLog" Version="4.7.0" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.9.0" />
+    <PackageReference Include="Sendgrid" Version="9.10.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="2.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EVA.EIMS.Business\EVA.EIMS.Business.csproj" />
+    <ProjectReference Include="..\EVA.EIMS.Common\EVA.EIMS.Common.csproj" />
+    <ProjectReference Include="..\EVA.EIMS.Data\EVA.EIMS.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="EVA.EIMS.Logging">
+      <HintPath>dll\EVA.EIMS.Logging.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+</Project>

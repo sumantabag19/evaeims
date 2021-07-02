@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[OTPType] (
+    [OTPTypeId]   INT            IDENTITY (1, 1) NOT NULL,
+    [OTPTypeName] NVARCHAR (150) NOT NULL,
+    CONSTRAINT [PK_OTPType] PRIMARY KEY CLUSTERED ([OTPTypeId] ASC)
+);
+
